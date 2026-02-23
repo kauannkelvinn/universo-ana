@@ -1,0 +1,29 @@
+"use function";
+
+export default function Footer() {
+  return (
+    <footer className="relative w-full py-32 flex flex-col items-center justify-center bg-[#050505] border-t border-zinc-900 z-10 overflow-hidden">
+      
+      {/* Luzes de fundo sutis */}
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-32 bg-[#b25cff]/10 blur-[100px] pointer-events-none"></div>
+
+      <div className="text-center px-6 max-w-3xl">
+        <h2 className="font-metal text-4xl md:text-5xl text-[#e0e0e0] mb-8 drop-shadow-[0_0_10px_rgba(255,255,255,0.1)]">
+          VOCE EH <span className="text-[#b25cff]">FODA!!!</span>
+        </h2>
+        
+        <p className="font-scrapbook text-xl md:text-2xl text-gray-400 leading-relaxed mb-12">
+          De Fortaleza a São Paulo, de shows inesqueciveis as madrugadas no Fortnite. 
+          Isso eh so um pedaço do universo que a gente ta construindo juntos.
+        </p>
+
+        <div className="flex flex-col items-center gap-4">
+          <div className="w-16 h-px bg-linear-to-r from-transparent via-[#39ff14] to-transparent"></div>
+          <p className="font-y2k text-white text-sm tracking-[0.3em]">
+            FEITO COM 🤍 PARA A ANA CAROLINNE, ISSO EH APENAS O COMECO. TE AMO
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}
