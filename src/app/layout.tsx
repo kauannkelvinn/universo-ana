@@ -7,14 +7,35 @@ const vcrFont = localFont({
   variable: "--font-vcr",
 });
 
-const momsFont = localFont({
-  src: "./fonts/moms.ttf",
-  variable: "--font-moms",
-});
-
-const blackhawkFont = localFont({
-  src: "./fonts/blackhawk.otf",
-  variable: "--font-blackhawk",
+const khTeka = localFont({
+  src: [
+    {
+      path: "./fonts/khtekaregular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/khtekamedium.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./fonts/khtekabold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "./fonts/khtekablack.woff2", // Black sem itálico!
+      weight: "900",
+      style: "normal",
+    },
+    {
+      path: "./fonts/khtekalight.woff2", // Black sem itálico!
+      weight: "300",
+      style: "normal",
+    },
+  ],
+  variable: "--font-kh-teka",
 });
 
 export const metadata: Metadata = {
@@ -28,7 +49,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${vcrFont.variable} ${momsFont.variable} ${blackhawkFont.variable}`}>
+    <html lang="pt-BR" className={`${vcrFont.variable} ${khTeka.variable}`}>
       <body className="bg-[#0a0a0a] text-[#e0e0e0] overflow-x-hidden">
         {children}
       </body>

@@ -21,7 +21,7 @@ export default function PresenteFinal() {
       
       {/* Título */}
       <div className="mb-10">
-        <h2 className="font-sans font-black italic text-4xl md:text-6xl text-white uppercase drop-shadow-[0_0_15px_rgba(178,92,255,0.5)]">
+        <h2 className="font-sans font-black text-4xl md:text-6xl text-white uppercase drop-shadow-[0_0_15px_rgba(178,92,255,0.5)]">
           SUPPLY DROP <span className="text-[#b25cff]">DETECTADO</span>
         </h2>
         <p className="font-y2k text-zinc-400 mt-4 text-sm tracking-[0.2em] uppercase">
@@ -67,11 +67,11 @@ export default function PresenteFinal() {
             {/* Luz de fundo */}
             <div className="absolute -top-20 -right-20 w-64 h-64 bg-[#b25cff]/20 rounded-full blur-[100px] pointer-events-none"></div>
 
-            <h3 className="font-sans font-black italic text-3xl md:text-5xl text-white uppercase mb-6">
+            <h3 className="font-sans font-black text-2xl md:text-4xl text-white uppercase mb-6">
               MISSÃO <span className="text-[#39ff14]">CONCLUÍDA</span>
             </h3>
             
-            <p className="font-sans text-lg md:text-xl text-zinc-300 mb-8 leading-relaxed max-w-2xl mx-auto">
+            <p className="font-light text-sm md:text-lg text-zinc-300 mb-8 leading-relaxed max-w-2xl mx-auto">
               Ana Carolinne, o universo digital só consegue guardar uma parte do que a gente constrói. O resto... acabou de chegar para você no mundo real.
             </p>
 

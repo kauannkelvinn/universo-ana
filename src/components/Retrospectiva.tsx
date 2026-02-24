@@ -29,7 +29,7 @@ export default function Retrospectiva() {
 
   return (
     <section ref={timelineRef} className="relative w-full max-w-5xl mx-auto px-6 py-32 flex flex-col items-center z-10">
-      <h2 className="font-metal text-6xl md:text-8xl text-center text-[#e0e0e0] mb-32 drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]">
+      <h2 className="font-bold text-6xl md:text-8xl text-center text-[#e0e0e0] mb-32 drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]">
         A NOSSA <span className="text-[#b25cff]">JORNADA</span>
       </h2>
 
@@ -44,8 +44,8 @@ export default function Retrospectiva() {
           </div>
           <div className="w-full md:w-[45%] md:text-right md:-order-1 mb-6 md:mb-0">
             <p className="font-y2k text-[#39ff14] text-xl">MAR . 2024</p>
-            <h3 className="font-metal text-5xl text-white mt-2 tracking-widest">O MAIOR ALIVIO</h3>
-            <p className="font-scrapbook text-xl text-gray-300 mt-4 leading-relaxed">
+            <h3 className="font-bold text-5xl text-white mt-2 tracking-widest">O MAIOR ALIVIO</h3>
+            <p className="text-xl font-medium text-gray-300 mt-4 leading-relaxed">
               O marco mais importante. O momento em que a sua mãe curou do câncer. Uma vitória gigante que trouxe a luz de volta pros nossos dias.
             </p>
           </div>
@@ -67,9 +67,9 @@ export default function Retrospectiva() {
           </div>
           <div className="w-full md:w-[45%] mb-6 md:mb-0">
             <p className="font-y2k text-[#ff4500] text-xl">SET . 2024</p>
-            <h3 className="font-metal text-5xl text-white mt-2 tracking-widest">PRAISE GOD</h3>
-            <p className="font-scrapbook text-xl text-gray-300 mt-4 leading-relaxed">
-              A primeira vez que a gente se viu pessoalmente. Rock in Rio, o caos perfeito no show do Travis Scott, resenhando com o grupinho do show. Inesquecível.
+            <h3 className="font-bold text-5xl text-white mt-2 tracking-widest">PRAISE GOD</h3>
+            <p className="text-xl font-medium text-gray-300 mt-4 leading-relaxed">
+              A primeira vez que a gente se viu pessoalmente. Rock in Rio, o caos perfeito no show do Travis Scott, Inesquecível.
             </p>
           </div>
           <Link 
@@ -90,8 +90,8 @@ export default function Retrospectiva() {
           </div>
           <div className="w-full md:w-[45%] md:text-right md:-order-1 mb-6 md:mb-0">
             <p className="font-y2k text-[#00ffff] text-xl">30 . SET . 2025</p>
-            <h3 className="font-metal text-5xl text-white mt-2 tracking-widest">SING ABOUT ME</h3>
-            <p className="font-scrapbook text-xl text-gray-300 mt-4 leading-relaxed">
+            <h3 className="font-bold text-5xl text-white mt-2 tracking-widest">SING ABOUT ME</h3>
+            <p className="text-xl font-medium text-gray-300 mt-4 leading-relaxed">
               Viajei pra te ver e curtir o show do Kendrick Lamar contigo. Aquele momento nosso cantando alto junto com a multidao.
             </p>
           </div>
@@ -113,8 +113,8 @@ export default function Retrospectiva() {
           </div>
           <div className="w-full md:w-[45%] mb-6 md:mb-0">
             <p className="font-y2k text-[#ff007f] text-xl">DEZ . 2025</p>
-            <h3 className="font-metal text-5xl text-white mt-2 tracking-widest">UM MES EM SP</h3>
-            <p className="font-scrapbook text-xl text-gray-300 mt-4 leading-relaxed">
+            <h3 className="font-bold text-5xl text-white mt-2 tracking-widest">UM MES EM SP</h3>
+            <p className="text-xl font-medium text-gray-300 mt-4 leading-relaxed">
               A ponte aerea Fortaleza x Sao Paulo. Um mes inteiro vivendo do teu lado, terminando o ano juntos num Reveillon perfeito.
             </p>
           </div>
@@ -136,8 +136,8 @@ export default function Retrospectiva() {
           </div>
           <div className="w-full md:w-[45%] md:text-right md:-order-1 mb-6 md:mb-0">
             <p className="font-y2k text-[#ffd700] text-xl">2023 - 2025</p>
-            <h3 className="font-metal text-5xl text-white mt-2 tracking-widest">A ESTETICA</h3>
-            <p className="font-scrapbook text-xl text-gray-300 mt-4 leading-relaxed">
+            <h3 className="font-bold text-5xl text-white mt-2 tracking-widest">A ESTETICA</h3>
+            <p className="text-xl font-medium text-gray-300 mt-4 leading-relaxed">
               Os detalhes, os shows absurdos, as flores e os momentos que constroem quem tu és.
             </p>
           </div>

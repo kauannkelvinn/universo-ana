@@ -8,7 +8,7 @@ export default function MaeCuradaPage() {
   const fotos = [
     { src: "/imagens/MemoriasDela/maecuradadocancer.jpg", titulo: "A GRANDE VITORIA", data: "MAR 2024" },
     { src: "/imagens/MemoriasDela/guilhermeelaura1.webp", titulo: "A BASE DE TUDO", data: "AUG 2022" },
-    { src: "/imagens/MemoriasDela/lauramenorzinha.jpg", titulo: "MAR LAURA", data: "MAR 2020" },
+    { src: "/imagens/MemoriasDela/lauramenorzinha.jpg", titulo: "LAURA", data: "MAR 2020" },
     { src: "/imagens/MemoriasDela/guilhermemenorzinho.jpg", titulo: "GUILHERME", data: "MAR 2020" },
     // { src: "/imagens/MemoriasDela/heloisa.jpg", titulo: "HELOISA E NEGO", data: "JAN 2026" },
   ];
@@ -21,7 +21,7 @@ export default function MaeCuradaPage() {
         <Link href="/" className="font-y2k text-sm hover:text-[#39ff14] transition-colors tracking-widest">
           [ VOLTAR AO UNIVERSO ]
         </Link>
-        <h1 className="font-metal text-3xl md:text-4xl text-white tracking-widest absolute left-1/2 -translate-x-1/2 whitespace-nowrap">
+        <h1 className="font-y2k text-3xl md:text-4xl text-white tracking-widest absolute left-1/2 -translate-x-1/2 whitespace-nowrap">
           O MAIOR ALIVIO
         </h1>
         <div className="w-24"></div> 
@@ -53,7 +53,7 @@ export default function MaeCuradaPage() {
 
             {/* Títulos com hover VERDE NEON */}
             <div className="flex justify-between items-end mt-6 font-y2k text-xs tracking-widest text-zinc-500 group-hover:text-white transition-colors">
-              <span className="text-sm font-scrapbook uppercase text-[#39ff14]/80 group-hover:text-[#39ff14]">
+              <span className="text-sm font-medium uppercase text-[#39ff14]/80 group-hover:text-[#39ff14]">
                 {foto.titulo}
               </span>
               <span>{foto.data}</span>

@@ -33,10 +33,10 @@ export default function Hobbies() {
 
       {/* Título */}
       <div className="text-center mb-16">
-        <h2 className="font-metal text-5xl md:text-7xl text-[#e0e0e0] drop-shadow-[0_0_15px_rgba(255,255,255,0.1)] uppercase">
+        <h2 className="font-black text-5xl md:text-7xl text-[#e0e0e0] drop-shadow-[0_0_15px_rgba(255,255,255,0.1)] uppercase">
           O QUE ELA <span className="text-[#ff007f] drop-shadow-[0_0_15px_rgba(255,0,127,0.5)]">AMA</span>
         </h2>
-        <p className="font-scrapbook text-zinc-400 mt-4 text-xl md:text-2xl">
+        <p className="text-zinc-400 font-regular mt-4 text-xl md:text-2xl">
           A curadoria das vibes, dos jogos aos sons que batem forte.
         </p>
       </div>
@@ -70,12 +70,11 @@ export default function Hobbies() {
             <source src="/imagens/gameplay/nossovideo.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-80"></div>
-          <h3 className="absolute bottom-6 left-6 font-metal text-4xl text-white drop-shadow-lg z-10 tracking-wider">NOSSO DUO</h3>
+          <h3 className="absolute bottom-6 left-6 font-black text-2xl text-white drop-shadow-lg z-10 tracking-wider">NOSSA DUPLA</h3>
         </div>
 
         {/* 5. KORN (Quadrado) */}
         <div className="bento-item relative rounded-3xl overflow-hidden border-2 border-zinc-800/50 group bg-zinc-900 md:hidden"> 
-           {/* Deixei escondido no PC para o mosaico ficar quadrado perfeito com 3 colunas, se quiser mostrar, a gente ajusta a altura! */}
           <Image src="/imagens/albuns/korn.jpg" alt="Korn" fill className="object-cover opacity-80 group-hover:scale-110 transition-transform duration-700" />
         </div>
 

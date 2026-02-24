@@ -11,11 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 // 🎵 A TUA PLAYLIST MÁGICA AQUI:
 // Podes adicionar quantas quiseres copiando a linha e mudando os nomes!
 const PLAYLIST = [
-  { title: "Niagara Falls", artist: "The Weeknd", src: "/musicas/niagarafalls-theweeknd.mp3" },
-  { title: "Not Like Us", artist: "Kendrick Lamar", src: "/musicas/eu-e-ela/notlikeus-kendrick.mp3" },
-  { title: "Stargazing", artist: "Travis Scott", src: "/musicas/stargazing-travisscott.mp3" },
-  { title: "Toxicity", artist: "System Of A Down", src: "/musicas/toxicity-systemofadown.mp3" },
-  { title: "Blind", artist: "Korn", src: "/musicas/blind-korn.mp3" },
+  { title: "Niagara Falls", artist: "The Weeknd", src: "/musicas/collectcalls-kendrick.webm" },
 ];
 
 export default function Vitrola() {
@@ -89,11 +85,11 @@ export default function Vitrola() {
 
   return (
     <section ref={containerRef} className="relative w-full min-h-screen flex flex-col items-center py-32 bg-linear-to-brom-[#0a0a0a] to-[#121212]">
-      <h2 className="font-metal text-5xl md:text-7xl text-center text-[#e0e0e0] mb-12 drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+      <h2 className="font-black text-5xl md:text-7xl text-center text-[#e0e0e0] mb-12 drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
         O SEU <span className="text-[#39ff14]">UNIVERSO</span>
       </h2>
       
-      <p className="font-scrapbook text-xl text-gray-400 text-center max-w-2xl mb-16 px-6">
+      <p className="text-xl font-light text-gray-400 text-center max-w-2xl mb-16 px-6">
         A trilha sonora dos nossos dias, os mundos que tu exploras e as vibezinhas que te fazem ser tu.
       </p>
 
@@ -114,11 +110,10 @@ export default function Vitrola() {
           
           {/* Info da Música */}
           <div className="min-w-30in-w-[160px]">
-            <p className="font-y2k text-[#39ff14] text-[10px] md:text-xs tracking-widest mb-1">NOW PLAYING</p>
-            <p className="font-scrapbook text-white text-base md:text-lg truncate max-w-37.5 md:max-w-50">
+            <p className="text-white text-base md:text-lg truncate max-w-37.5 md:max-w-50">
               {PLAYLIST[currentTrack].title}
             </p>
-            <p className="font-scrapbook text-gray-400 text-xs md:text-sm truncate">
+            <p className="text-gray-400 text-xs md:text-sm truncate">
               {PLAYLIST[currentTrack].artist}
             </p>
           </div>

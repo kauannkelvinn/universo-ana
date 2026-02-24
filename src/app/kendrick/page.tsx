@@ -45,7 +45,7 @@ export default function KendrickPage() {
         <Link href="/" className="font-y2k text-sm hover:text-[#00ffff] transition-colors tracking-widest">
           [ VOLTAR AO UNIVERSO ]
         </Link>
-        <h1 className="font-metal text-4xl text-white tracking-widest absolute left-1/2 -translate-x-1/2">
+        <h1 className="font-y2k text-4xl text-white tracking-widest absolute left-1/2 -translate-x-1/2">
           SING ABOUT ME
         </h1>
         <div className="w-24"></div> 
@@ -65,7 +65,7 @@ export default function KendrickPage() {
             </div>
 
             <div className="flex justify-between items-end mt-6 font-y2k text-xs tracking-widest text-zinc-500 group-hover:text-white transition-colors">
-              <span className="text-sm font-scrapbook uppercase text-[#00ffff]/80 group-hover:text-[#00ffff]">{foto.titulo}</span>
+              <span className="text-sm font-medium uppercase text-[#00ffff]/80 group-hover:text-[#00ffff]">{foto.titulo}</span>
               <span>{foto.data}</span>
             </div>
           </article>

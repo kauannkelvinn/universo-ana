@@ -51,7 +51,7 @@ export default function AnimesPage() {
             </div>
 
             <div className="flex justify-between items-end mt-6 font-y2k text-xs tracking-widest text-zinc-500 group-hover:text-white transition-colors">
-              <span className="text-sm font-scrapbook uppercase text-[#00e5ff]/80 group-hover:text-[#00e5ff]">{foto.titulo}</span>
+              <span className="text-sm uppercase text-[#00e5ff]/80 group-hover:text-[#00e5ff]">{foto.titulo}</span>
               <span>{foto.data}</span>
             </div>
 

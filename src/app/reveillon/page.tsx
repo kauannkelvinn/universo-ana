@@ -43,7 +43,7 @@ export default function ReveillonPage() {
         <Link href="/" className="font-y2k text-sm hover:text-[#ff007f] transition-colors tracking-widest">
           [ VOLTAR AO UNIVERSO ]
         </Link>
-        <h1 className="font-metal text-4xl text-white tracking-widest absolute left-1/2 -translate-x-1/2 whitespace-nowrap">
+        <h1 className="font-y2k text-4xl text-white tracking-widest absolute left-1/2 -translate-x-1/2 whitespace-nowrap">
           UM MES EM SP
         </h1>
         <div className="w-24"></div> 
@@ -62,7 +62,7 @@ export default function ReveillonPage() {
             </div>
 
             <div className="flex justify-between items-end mt-6 font-y2k text-xs tracking-widest text-zinc-500 group-hover:text-white transition-colors">
-              <span className="text-sm font-scrapbook uppercase text-[#ff007f]/80 group-hover:text-[#ff007f]">{foto.titulo}</span>
+              <span className="text-sm font-medium uppercase text-[#ff007f]/80 group-hover:text-[#ff007f]">{foto.titulo}</span>
               <span>{foto.data}</span>
             </div>
           </article>
