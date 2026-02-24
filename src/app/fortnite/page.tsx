@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
-// --- A TUA LISTA DE SKINS ---
 const skinsDoLobby = [
   { id: "skin1", nome: "NOODLE (GORILLAZ)", src: "/imagens/fortnite/noodle2.png" },
   { id: "skin2", nome: "TRAVIS SCOTT", src: "/imagens/fortnite/travis.png" },
@@ -40,7 +39,6 @@ export default function FortniteLobbyPage() {
   return (
     <main className="w-full min-h-screen bg-[#000a1a] overflow-hidden flex flex-col">
 
-      {/* HEADER: Fonte ajustada para o padrão do jogo */}
       <header className="w-full flex items-center justify-end p-6 border-b border-blue-900/50 bg-[#001538]/90 backdrop-blur-md z-20">
         <div className="flex items-center gap-8 text-white font-sans font-black text-2xl tracking-widest uppercase">
           <Link href="/">
@@ -52,10 +50,9 @@ export default function FortniteLobbyPage() {
       </header>
 
       <section className="grow relative flex flex-col md:flex-row items-center justify-center p-6 gap-8">
-
         <div className="absolute inset-0 z-0 bg-linear-to-b from-[#003B93] via-[#001d52] to-[#000a1a]"></div>
 
-        {/* --- LADO ESQUERDO: A SKIN GIGANTE --- */}
+        {/* LADO ESQUERDO */}
         <div className="relative w-full md:w-1/2 h-[50vh] md:h-[80vh] flex items-end justify-center z-10">
           <div className="absolute bottom-5 w-64 h-16 bg-[#4A90E2]/20 rounded-[100%] blur-[2px] border-2 border-cyan-400/30 transform perspective-midrange rotateX-[70deg] shadow-[0_0_30px_rgba(74,144,226,0.5)]"></div>
 
@@ -72,7 +69,6 @@ export default function FortniteLobbyPage() {
             </motion.div>
           </AnimatePresence>
 
-          {/* NOME DA SKIN: Agora usando a fonte forte do jogo */}
           <div className="absolute bottom-20 left-0 md:left-10 flex flex-col">
             <span className="text-blue-400 text-sm tracking-widest italic uppercase font-sans font-bold">OUTFIT - FORTNITE STYLE</span>
             <h1 className="font-sans font-black text-6xl md:text-8xl text-white tracking-wider drop-shadow-lg italic uppercase">
@@ -81,13 +77,9 @@ export default function FortniteLobbyPage() {
           </div>
         </div>
 
-        {/* --- LADO DIREITO: LOCKER & MAPA --- */}
+        {/* LADO DIREITO */}
         <div className="w-full md:w-1/2 flex flex-col z-10 gap-6 h-full md:h-[85vh]">
-
-          {/* O SELETOR DE SKINS (Refatorado para combinar com o botão do mapa) */}
           <div className="flex flex-col gap-2 w-full bg-[#12233a] p-5 rounded-3xl border-b-4 border-black/30 shadow-2xl grow">
-
-            {/* Header do Locker (Sem o Search!) */}
             <div className="flex justify-between items-center mb-1 pb-2">
               <h3 className="font-sans font-black text-3xl text-white italic drop-shadow-md uppercase tracking-wide px-1">
                 CHARACTER
@@ -100,7 +92,8 @@ export default function FortniteLobbyPage() {
                   <button onClick={() => setSkinAtual(skin)} title={skin.nome} className={`absolute inset-0 w-full h-full rounded-xl overflow-hidden border-2 transition-all block ${skinAtual.id === skin.id ? "border-[#fbff00] scale-110 shadow-[0_0_15px_rgba(251,255,0,0.8)] z-20" : "border-[#4A90E2]/40 hover:border-white hover:scale-110 hover:z-10 z-0"} bg-linear-to-b from-[#417fd6] to-[#0b1f4a]`}>
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.2)_0%,transparent_70%)] pointer-events-none"></div>
                     <div className="absolute inset-1 md:inset-2 pointer-events-none">
-                      <Image src={skin.src} alt={skin.nome} fill sizes="(max-width: 768px) 20vw, 15vw" className="object-contain object-center drop-shadow-lg" />
+                      {/* Otimizado com loading="lazy" */}
+                      <Image src={skin.src} alt={skin.nome} fill loading="lazy" sizes="(max-width: 768px) 20vw, 15vw" className="object-contain object-center drop-shadow-lg" />
                     </div>
                   </button>
                 </div>
@@ -108,9 +101,7 @@ export default function FortniteLobbyPage() {
             </div>
           </div>
 
-          {/* --- CAIXA DE AÇÃO DO MAPA --- */}
           <div className="w-full bg-[#394a5c] rounded-3xl p-5 flex flex-col gap-4 shadow-2xl relative border-b-4 border-black/30">
-
             <h3 className="font-sans font-black text-white italic text-3xl tracking-wide uppercase drop-shadow-md px-1">
               MAPA INTERATIVO
             </h3>
@@ -126,9 +117,7 @@ export default function FortniteLobbyPage() {
             >
               ABRIR
             </Link>
-
           </div>
-
         </div>
       </section>
     </main>
