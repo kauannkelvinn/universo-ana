@@ -33,7 +33,7 @@ export default function KendrickPage() {
       data: "SET 2025" 
     },
     { 
-      src: "/imagens/eu-e-ela/viagemkendrick2025/notlikeus-kendrick.mp4", // <- LEMBRA DE CONVERTER E TIRAR O ESPAÇO!
+      src: "/imagens/eu-e-ela/viagemkendrick2025/notlikeus.mp4", // <- LEMBRA DE CONVERTER E TIRAR O ESPAÇO!
       titulo: "WOP WOP WOP WOP WOP", 
       data: "SET 2025" 
     },

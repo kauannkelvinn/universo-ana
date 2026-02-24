@@ -57,7 +57,7 @@ export default function Hobbies() {
         {/* 3. A SKIN DO FORTNITE (Retângulo Alto - Ocupa 2 linhas) -> LINK PARA O LOBBY */}
         <Link href="/fortnite" className="bento-item relative col-span-2 md:col-span-1 md:row-span-2 rounded-3xl overflow-hidden border-2 border-blue-900/50 bg-[#001538] group cursor-pointer hover:border-[#fbff00] transition-colors shadow-[0_0_20px_rgba(0,0,0,0.5)]">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(74,144,226,0.2)_0%,transparent_70%)]"></div>
-          <Image src="/imagens/fortnite/noodle.png" alt="Skin Fortnite" fill className="object-contain object-bottom p-4 group-hover:scale-110 transition-transform duration-500 z-10" />
+          <Image src="/imagens/fortnite/noodle2.png" alt="Skin Fortnite" fill className="object-contain object-bottom p-4 group-hover:scale-110 transition-transform duration-500 z-10" />
           
           <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity z-20 flex flex-col items-center justify-center backdrop-blur-sm">
              <span className="font-sans font-black text-[#fbff00] text-2xl italic uppercase drop-shadow-lg text-center px-4">ABRIR LOBBY</span>
