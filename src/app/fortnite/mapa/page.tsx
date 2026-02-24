@@ -8,22 +8,20 @@ import { motion, AnimatePresence } from "framer-motion";
 type LocalMapa = {
   id: string;
   nome: string;
-  top: string; // Coordenada do PC (Intocada!)
-  left: string; // Coordenada do PC (Intocada!)
-  topMobile: string; // ✨ Coordenada SÓ para o celular!
-  leftMobile: string; // ✨ Coordenada SÓ para o celular!
+  top: string;
+  left: string;
+  topMobile: string;
+  leftMobile: string;
   midia: string;
   tipo: string;
   formato?: "retrato" | "paisagem";
 };
 
-// --- 📍 AS TUAS COORDENADAS ---
 const locaisDoMapa: LocalMapa[] = [
   {
     id: "tilted",
     nome: "TILTED TOWERS",
     top: "49%", left: "37%",
-    // COLOQUEI VALORES APROXIMADOS PARA O MOBILE, VOCÊ PODE AJUSTAR!
     topMobile: "50%", leftMobile: "37%", 
     midia: "https://res.cloudinary.com/dyxzqghnx/video/upload/v1771948886/Nossovideo_uzgnn0.mp4",
     tipo: "video",
@@ -105,14 +103,12 @@ export default function MapaPage() {
               <button
                 key={local.id}
                 onClick={() => setLocalAtivo(local)}
-                /* 🪄 INJETANDO AS VARIÁVEIS CSS PARA O MOBILE E PC */
                 style={{
                   "--top-pc": local.top,
                   "--left-pc": local.left,
                   "--top-mob": local.topMobile,
                   "--left-mob": local.leftMobile,
                 } as React.CSSProperties}
-                /* LENDO AS VARIÁVEIS NO TAILWIND DE ACORDO COM A TELA */
                 className="absolute z-10 w-4 h-4 md:w-5 md:h-5 bg-[#f9ff00] rounded-full shadow-[0_0_20px_#f9ff00] hover:scale-125 transition-transform cursor-crosshair group/radar border-2 border-white/80 -translate-x-1/2 -translate-y-1/2 top-(--top-mob) left-(--left-mob) md:top-(--top-pc) md:left-(--left-pc)"
               >
                 <span className="absolute -inset-3 rounded-full border-2 border-[#f9ff00] animate-ping opacity-60"></span>
@@ -124,7 +120,6 @@ export default function MapaPage() {
 
          </div>
 
-         {/* MODAL */}
          <AnimatePresence>
             {localAtivo && (
               <motion.div

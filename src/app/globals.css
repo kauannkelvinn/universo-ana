@@ -1,24 +1,18 @@
 @import "tailwindcss";
 
-/* 1. DEFINIÇÃO DO TEMA (v4 style) */
 @theme {
-  /* Cores base */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   
-  /* Fontes - Mapeamos as variáveis do Next.js para nomes fáceis no Tailwind */
-  --font-teka: var(--font-kh-teka);     /* A nova KH Teka Trial */
-  --font-y2k: var(--font-vcr);          /* Mantendo a sua VCR */
-  --font-pixel: "Press Start 2P";       /* Para as seções de Pixel Art */
+  --font-teka: var(--font-kh-teka);
+  --font-y2k: var(--font-vcr); 
+  --font-pixel: "Press Start 2P";
   
-  /* Mantendo as antigas caso precise de um fallback rápido */
   --font-scrapbook: var(--font-moms);
   --font-metal: var(--font-blackhawk);
 }
 
-/* 2. REGRAS GLOBAIS */
 :root {
-  /* Define a KH Teka como padrão de leitura do site */
   font-family: var(--font-kh-teka), sans-serif;
 }
 
@@ -31,19 +25,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Garante que todos os textos herdem a KH Teka por padrão */
 h1, h2, h3, h4, h5, h6, p, span, a, button {
   font-family: var(--font-kh-teka), sans-serif;
 }
 
-/* 3. EXCEÇÕES ESPECÍFICAS */
 
-/* A página do Fortnite ignora a KH Teka e usa a fonte do jogo */
 .fortnite-page, .fortnite-page * {
   font-family: var(--font-burbank), sans-serif !important;
 }
 
-/* Utilitário para forçar a VCR onde você quiser aquela vibe hacker */
 .font-y2k {
   font-family: var(--font-vcr), monospace !important;
 }

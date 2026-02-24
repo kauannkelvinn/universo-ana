@@ -8,7 +8,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-// 🗄️ DICIONÁRIO DE DADOS: Todas as memórias num só lugar. Fica muito mais fácil de editar!
 const MEMORIES = [
   {
     id: 1,
@@ -119,7 +118,6 @@ export default function Retrospectiva() {
 
         <div className="w-full flex flex-col gap-24">
           
-          {/* ♻️ RENDERIZAÇÃO INTELIGENTE: Um único bloco renderiza todos os cards com base no array */}
           {MEMORIES.map((memory) => (
             <div key={memory.id} className="memory-card relative w-full flex flex-col md:flex-row items-center justify-between pl-10 md:pl-0">
               

@@ -52,7 +52,6 @@ export default function FortniteLobbyPage() {
       <section className="grow relative flex flex-col md:flex-row items-center justify-center p-6 gap-8">
         <div className="absolute inset-0 z-0 bg-linear-to-b from-[#003B93] via-[#001d52] to-[#000a1a]"></div>
 
-        {/* LADO ESQUERDO */}
         <div className="relative w-full md:w-1/2 h-[50vh] md:h-[80vh] flex items-end justify-center z-10">
           <div className="absolute bottom-5 w-64 h-16 bg-[#4A90E2]/20 rounded-[100%] blur-[2px] border-2 border-cyan-400/30 transform perspective-midrange rotateX-[70deg] shadow-[0_0_30px_rgba(74,144,226,0.5)]"></div>
 
@@ -77,7 +76,6 @@ export default function FortniteLobbyPage() {
           </div>
         </div>
 
-        {/* LADO DIREITO */}
         <div className="w-full md:w-1/2 flex flex-col z-10 gap-6 h-full md:h-[85vh]">
           <div className="flex flex-col gap-2 w-full bg-[#12233a] p-5 rounded-3xl border-b-4 border-black/30 shadow-2xl grow">
             <div className="flex justify-between items-center mb-1 pb-2">
@@ -92,7 +90,6 @@ export default function FortniteLobbyPage() {
                   <button onClick={() => setSkinAtual(skin)} title={skin.nome} className={`absolute inset-0 w-full h-full rounded-xl overflow-hidden border-2 transition-all block ${skinAtual.id === skin.id ? "border-[#fbff00] scale-110 shadow-[0_0_15px_rgba(251,255,0,0.8)] z-20" : "border-[#4A90E2]/40 hover:border-white hover:scale-110 hover:z-10 z-0"} bg-linear-to-b from-[#417fd6] to-[#0b1f4a]`}>
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.2)_0%,transparent_70%)] pointer-events-none"></div>
                     <div className="absolute inset-1 md:inset-2 pointer-events-none">
-                      {/* Otimizado com loading="lazy" */}
                       <Image src={skin.src} alt={skin.nome} fill loading="lazy" sizes="(max-width: 768px) 20vw, 15vw" className="object-contain object-center drop-shadow-lg" />
                     </div>
                   </button>

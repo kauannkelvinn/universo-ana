@@ -43,7 +43,7 @@ const BENTO_ITEMS = [
   },
   {
     id: "korn",
-    type: "image-div", // Não tem link, é só a imagem
+    type: "image-div",
     src: "/imagens/albuns/korn.jpg",
     alt: "Korn",
     containerClass: "border-zinc-800/50 bg-zinc-900 md:hidden",
@@ -87,10 +87,8 @@ export default function Hobbies() {
       <div className="grid grid-cols-2 md:grid-cols-3 auto-rows-[200px] md:auto-rows-[250px] gap-4">
         
         {BENTO_ITEMS.map((item) => {
-          // Classe base que TODO item do Bento Grid tem que ter
           const baseClasses = `bento-item relative rounded-3xl overflow-hidden border-2 group ${item.containerClass}`;
 
-          // RENDERIZAÇÃO: Link + Imagem Simples (The Weeknd, Beavis)
           if (item.type === "image-link") {
             return (
               <Link key={item.id} href={item.href!} className={baseClasses}>
@@ -99,7 +97,6 @@ export default function Hobbies() {
             );
           }
 
-          // RENDERIZAÇÃO: Apenas Imagem (Korn)
           if (item.type === "image-div") {
             return (
               <div key={item.id} className={baseClasses}>
@@ -108,7 +105,6 @@ export default function Hobbies() {
             );
           }
 
-          // RENDERIZAÇÃO: Card Especial do Fortnite
           if (item.type === "fortnite-card") {
             return (
               <Link key={item.id} href={item.href!} className={baseClasses}>
@@ -121,7 +117,6 @@ export default function Hobbies() {
             );
           }
 
-          // RENDERIZAÇÃO: Card Especial de Vídeo (Duo)
           if (item.type === "video") {
             return (
               <div key={item.id} className={baseClasses}>
