@@ -40,10 +40,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Vídeos pesados que travam o push
-public/imagens/gameplay/*.mp4
-public/imagens/fortnite/*.mp4
-
 # Arquivos de sistema e backups que apareceram no WinDirStat
 *.knb
 *.application
