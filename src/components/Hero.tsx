@@ -46,7 +46,7 @@ export default function Hero() {
   }, [isLoaded]);
 
   return (
-    <section ref={containerRef} className="relative w-full h-[300vh]">
+    <section ref={containerRef} className="relative w-full h-full">
       <div className="sticky top-0 w-full h-screen flex flex-col items-center justify-center">
         <Spline
           scene="https://prod.spline.design/ojGpXy7Tba71aG2z/scene.splinecode"
