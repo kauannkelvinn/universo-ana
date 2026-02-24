@@ -68,7 +68,7 @@ export default function EsteticaPage() {
         <Link href="/" className="font-y2k text-sm hover:text-[#ffd700] transition-colors tracking-widest">
           [ VOLTAR AO UNIVERSO ]
         </Link>
-        <h1 className="font-y2k text-4xl text-white tracking-widest absolute left-1/2 -translate-x-1/2 whitespace-nowrap">
+        <h1 className="font-y2k text-4xl hidden md:block text-white tracking-widest absolute left-1/2 -translate-x-1/2 whitespace-nowrap">
           A ESTETICA
         </h1>
         <div className="w-24"></div> 

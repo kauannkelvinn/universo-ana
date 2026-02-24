@@ -46,7 +46,7 @@ export default function RockInRioPage() {
                 <Link href="/" className="font-y2k text-sm hover:text-[#ff4500] transition-colors tracking-widest">
                     [ VOLTAR AO UNIVERSO ]
                 </Link>
-                <h1 className="font-y2k text-4xl text-white tracking-widest absolute left-1/2 -translate-x-1/2">
+                <h1 className="font-y2k hidden md:block text-4xl text-white tracking-widest absolute left-1/2 -translate-x-1/2">
                     ROCK IN RIO
                 </h1>
                 <div className="w-24"></div> {/* Espaçador para manter o título no centro */}

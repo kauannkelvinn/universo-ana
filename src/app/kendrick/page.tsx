@@ -45,7 +45,7 @@ export default function KendrickPage() {
         <Link href="/" className="font-y2k text-sm hover:text-[#00ffff] transition-colors tracking-widest">
           [ VOLTAR AO UNIVERSO ]
         </Link>
-        <h1 className="font-y2k text-4xl text-white tracking-widest absolute left-1/2 -translate-x-1/2">
+        <h1 className="font-y2k text-4xl hidden md:block text-white tracking-widest absolute left-1/2 -translate-x-1/2">
           SING ABOUT ME
         </h1>
         <div className="w-24"></div> 

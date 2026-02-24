@@ -122,7 +122,7 @@ export default function FortniteLobbyPage() {
 
             <Link
               href="/fortnite/mapa"
-              className="w-full bg-[#f9ff00] text-[#111] font-sans font-black text-4xl p-5 rounded-2xl flex justify-center items-center outline-none ring-0 hover:ring-[5px] hover:ring-white hover:ring-offset-[5px] hover:ring-offset-[#394a5c] transition-all duration-200 cursor-pointer shadow-lg active:scale-[0.98] uppercase"
+              className="w-full bg-[#f9ff00] text-[#111] font-sans font-black text-3xl md:text-4xl p-5 rounded-2xl flex justify-center items-center outline-none ring-0 hover:ring-[5px] hover:ring-white hover:ring-offset-[5px] hover:ring-offset-[#394a5c] transition-all duration-200 cursor-pointer shadow-lg active:scale-[0.98] uppercase"
             >
               ABRIR
             </Link>

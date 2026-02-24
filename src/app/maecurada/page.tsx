@@ -21,7 +21,7 @@ export default function MaeCuradaPage() {
         <Link href="/" className="font-y2k text-sm hover:text-[#39ff14] transition-colors tracking-widest">
           [ VOLTAR AO UNIVERSO ]
         </Link>
-        <h1 className="font-y2k text-3xl md:text-4xl text-white tracking-widest absolute left-1/2 -translate-x-1/2 whitespace-nowrap">
+        <h1 className="font-y2k hidden md:block md:text-4xl text-white tracking-widest absolute left-1/2 -translate-x-1/2 whitespace-nowrap">
           O MAIOR ALIVIO
         </h1>
         <div className="w-24"></div> 

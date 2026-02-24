@@ -85,11 +85,11 @@ export default function Vitrola() {
 
   return (
     <section ref={containerRef} className="relative w-full min-h-screen flex flex-col items-center py-32 bg-linear-to-brom-[#0a0a0a] to-[#121212]">
-      <h2 className="font-black text-5xl md:text-7xl text-center text-[#e0e0e0] mb-12 drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
-        O SEU <span className="text-[#39ff14]">UNIVERSO</span>
+      <h2 className="font-black text-[43px] text-5xl md:text-7xl text-center text-[#e0e0e0] mb-12 drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+        O SEU UNIVERSO
       </h2>
       
-      <p className="text-xl font-light text-gray-400 text-center max-w-2xl mb-16 px-6">
+      <p className="text-[16px] md:text-xl font-light text-gray-400 text-center max-w-2xl mb-16 px-6">
         A trilha sonora dos nossos dias, os mundos que tu exploras e as vibezinhas que te fazem ser tu.
       </p>
 

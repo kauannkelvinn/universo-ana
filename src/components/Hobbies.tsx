@@ -33,10 +33,10 @@ export default function Hobbies() {
 
       {/* Título */}
       <div className="text-center mb-16">
-        <h2 className="font-black text-5xl md:text-7xl text-[#e0e0e0] drop-shadow-[0_0_15px_rgba(255,255,255,0.1)] uppercase">
-          O QUE ELA <span className="text-[#ff007f] drop-shadow-[0_0_15px_rgba(255,0,127,0.5)]">AMA</span>
+        <h2 className="font-black text-[43px] md:text-7xl text-[#e0e0e0] drop-shadow-[0_0_15px_rgba(255,255,255,0.1)] uppercase">
+          O QUE ELA AMA
         </h2>
-        <p className="text-zinc-400 font-regular mt-4 text-xl md:text-2xl">
+        <p className="text-zinc-400 font-bold md:font-regular mt-4 text-xl md:text-2xl">
           A curadoria das vibes, dos jogos aos sons que batem forte.
         </p>
       </div>
@@ -70,7 +70,7 @@ export default function Hobbies() {
             <source src="/imagens/gameplay/nossovideo.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-80"></div>
-          <h3 className="absolute bottom-6 left-6 font-black text-2xl text-white drop-shadow-lg z-10 tracking-wider">NOSSA DUPLA</h3>
+          <h3 className="absolute bottom-6 left-6 font-black md:text-2xl text-white drop-shadow-lg z-10 tracking-wider">NOSSA DUPLA</h3>
         </div>
 
         {/* 5. KORN (Quadrado) */}
