@@ -25,12 +25,12 @@ const khTeka = localFont({
       style: "normal",
     },
     {
-      path: "./fonts/khtekablack.woff2", // Black sem itálico!
+      path: "./fonts/khtekablack.woff2",
       weight: "900",
       style: "normal",
     },
     {
-      path: "./fonts/khtekalight.woff2", // Black sem itálico!
+      path: "./fonts/khtekalight.woff2",
       weight: "300",
       style: "normal",
     },

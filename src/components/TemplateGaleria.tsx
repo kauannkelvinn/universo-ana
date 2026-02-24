@@ -4,8 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import GaleriaModal from "./GaleriaModal";
-
-// Definindo o formato dos dados que o template vai receber
 export interface FotoDado {
   src: string;
   titulo: string;
@@ -14,8 +12,8 @@ export interface FotoDado {
 
 interface TemplateGaleriaProps {
   tituloPagina: string;
-  corHoverTexto: string; // Ex: "#ff4500" para o Rock in Rio, "#00e5ff" pros Animes
-  fonteTitulo?: string; // Para permitir usar a font-metal nos álbuns ou font-y2k no resto
+  corHoverTexto: string;
+  fonteTitulo?: string;
   fotos: FotoDado[];
 }
 
@@ -23,11 +21,9 @@ export default function TemplateGaleria({ tituloPagina, corHoverTexto, fonteTitu
   const [modalAberto, setModalAberto] = useState(false);
   const [fotoAtual, setFotoAtual] = useState(0);
 
-  // Filtra apenas as imagens (ignora vídeos) para o Modal poder funcionar perfeitamente
   const apenasImagensParaModal = fotos.map(f => f.src).filter(src => !src.endsWith(".mp4") && !src.endsWith(".MOV"));
 
   const abrirModal = (indexDaFoto: number) => {
-    // Se for vídeo, não abre o modal (vídeo já toca na tela)
     if (fotos[indexDaFoto].src.endsWith(".mp4") || fotos[indexDaFoto].src.endsWith(".MOV")) return;
     setFotoAtual(indexDaFoto);
     setModalAberto(true);
@@ -54,7 +50,6 @@ export default function TemplateGaleria({ tituloPagina, corHoverTexto, fonteTitu
         <div className="w-24"></div> 
       </header>
 
-      {/* GRID ESTILO PIMPAN */}
       <section className="grid grid-cols-1 md:grid-cols-3 border-l border-zinc-800">
         {fotos.map((foto, index) => {
           const isVideo = foto.src.endsWith(".mp4") || foto.src.endsWith(".MOV");
@@ -66,7 +61,6 @@ export default function TemplateGaleria({ tituloPagina, corHoverTexto, fonteTitu
               className={`relative flex flex-col h-[60vh] md:h-[80vh] border-r border-b border-zinc-800 p-6 group hover:bg-zinc-900/20 transition-colors ${!isVideo ? 'cursor-pointer' : ''}`}
             >
               
-              {/* ÁREA DA MÍDIA */}
               <div className="relative grow w-full overflow-hidden">
                 {isVideo ? (
                   <video 
@@ -80,13 +74,12 @@ export default function TemplateGaleria({ tituloPagina, corHoverTexto, fonteTitu
                     alt={foto.titulo} 
                     fill 
                     loading="lazy"
-                    unoptimized={foto.src.endsWith(".gif")} // Suporte pra os GIFs de Animes!
+                    unoptimized={foto.src.endsWith(".gif")}
                     className="object-cover grayscale-30 group-hover:grayscale-0 transition-all duration-700" 
                   />
                 )}
               </div>
 
-              {/* RODAPÉ DO CARD COM COR DINÂMICA NO HOVER */}
               <div 
                 className="flex justify-between items-end mt-6 font-y2k text-xs tracking-widest text-zinc-500 transition-colors"
                 onMouseEnter={(e) => e.currentTarget.style.color = 'white'}
@@ -94,7 +87,7 @@ export default function TemplateGaleria({ tituloPagina, corHoverTexto, fonteTitu
               >
                 <span 
                   className="text-sm font-medium uppercase"
-                  style={{ color: `${corHoverTexto}cc` }} // cc no final é 80% de opacidade no hex
+                  style={{ color: `${corHoverTexto}cc` }}
                 >
                   {foto.titulo}
                 </span>
@@ -105,7 +98,6 @@ export default function TemplateGaleria({ tituloPagina, corHoverTexto, fonteTitu
         })}
       </section>
 
-      {/* MODAL (Só carrega se estiver aberto) */}
       {modalAberto && (
         <GaleriaModal 
           imagens={apenasImagensParaModal} 

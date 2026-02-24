@@ -3,8 +3,8 @@ import TemplateGaleria from "@/components/TemplateGaleria";
 export default function AlbunsPage() {
   const fotos = [
     { src: "/imagens/albuns/afterhours.jpg", titulo: "AFTER HOURS", data: "THE WEEKND" },
-    { src: "/imagens/albuns/eu-e-ela/entergalactic.jpg", titulo: "ENTERGALACTIC", data: "KID CUDI" },
-    { src: "/imagens/albuns/eu-e-ela/longliveasap.jpg", titulo: "LONG.LIVE.A$AP", data: "A$AP ROCKY" },
+    { src: "/imagens/albuns/entergalactic.jpg", titulo: "ENTERGALACTIC", data: "KID CUDI" },
+    { src: "/imagens/albuns/longliveasap.jpg", titulo: "LONG.LIVE.A$AP", data: "A$AP ROCKY" },
     { src: "/imagens/albuns/astroworld.jpg", titulo: "ASTROWORLD", data: "TRAVIS SCOTT" },
     { src: "/imagens/albuns/korn.jpg", titulo: "KORN", data: "KORN" },
     { src: "/imagens/albuns/igor.jpg", titulo: "IGOR", data: "TYLER, THE CREATOR" },
@@ -34,7 +34,7 @@ export default function AlbunsPage() {
     { src: "/imagens/albuns/oneofwun.jpg", titulo: "ONE OF WUN", data: "GUNNA" },
     { src: "/imagens/albuns/lastofwun.jpg", titulo: "THE LAST OF WUN", data: "GUNNA" },
     { src: "/imagens/albuns/blizzardofozz.jpg", titulo: "BLIZZARD OF OZZ", data: "OZZY OSBOURNE" },
-    { src: "/imagens/albuns/dj.rxzrauer.jpg", titulo: "METEORA", data: "LINK PARK" },
+    { src: "/imagens/albuns/meteora.jpg", titulo: "METEORA", data: "LINK PARK" },
     { src: "/imagens/albuns/followtheleader.jpg", titulo: "FOLLOW THE LEADER", data: "KORN" },
     { src: "/imagens/albuns/octane.jpg", titulo: "OCTANE", data: "DON TOLIVER" },
     { src: "/imagens/albuns/ridethelightning.jpg", titulo: "RIDE THE LIGHTNING", data: "METALLICA" },
@@ -43,7 +43,7 @@ export default function AlbunsPage() {
   return (
     <TemplateGaleria 
       tituloPagina="DISCOGRAFIA" 
-      fonteTitulo="font-metal"
+      fonteTitulo="font-y2k"
       corHoverTexto="#b25cff" 
       fotos={fotos} 
     />
