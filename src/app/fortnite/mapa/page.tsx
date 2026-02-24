@@ -32,7 +32,7 @@ const locaisDoMapa: LocalMapa[] = [
     nome: "PLEASANT PARK",
     top: "32%", left: "29.40%",
     topMobile: "41.50%", leftMobile: "30%",
-    midia: "/imagens/gameplay/nossafoto.jpg",
+    midia: "/imagens/gameplay/nossafotoo.jpg",
     tipo: "imagem",
     formato: "paisagem"
   },
@@ -41,7 +41,7 @@ const locaisDoMapa: LocalMapa[] = [
     nome: "LAZY LINKS",
     top: "24.40%", left: "50.80%", 
     topMobile: "38%", leftMobile: "51%",
-    midia: "/imagens/gameplay/fotoposando.jpg", 
+    midia: "/imagens/gameplay/fotoposandoo.jpg", 
     tipo: "imagem",
     formato: "retrato" 
   },
