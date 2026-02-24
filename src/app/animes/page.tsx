@@ -16,7 +16,7 @@ export default function AnimesPage() {
     { src: "/imagens/animes/ace.gif", titulo: "PUNHOS DE FOGO (ACE)", data: "ONE PIECE" },
     { src: "/imagens/animes/sanji.gif", titulo: "BLACK LEG SANJI", data: "ONE PIECE" },
     { src: "/imagens/animes/luffybattle.webp", titulo: "A LUTA", data: "ONE PIECE" },
-    { src: "/imagens/animes/luffygear5eyespop.gif", titulo: "GEAR 5", data: "ONE PIECE" },
+    { src: "/imagens/animes/luffygear5olhos.webp", titulo: "GEAR 5", data: "ONE PIECE" },
   ];
 
   return (
