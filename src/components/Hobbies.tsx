@@ -37,7 +37,7 @@ const BENTO_ITEMS = [
   {
     id: "duo",
     type: "video",
-    src: "https://res.cloudinary.com/dyxzqghnx/video/upload/v1771948886/Nossovideo_uzgnn0.mp4",
+    src: "https://xcvpkzhmpeytdubs.public.blob.vercel-storage.com/gameplay3.mp4",
     title: "NOSSA DUPLA",
     containerClass: "col-span-2 border-zinc-800/50 bg-black",
   },
