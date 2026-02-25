@@ -7,7 +7,7 @@ export default function ReveillonPage() {
     { src: "/imagens/eu-e-ela/viagemreveillon25/heloisaeeu.jpg", titulo: "FAMÍLIA", data: "JAN 2026" },
     { src: "/imagens/eu-e-ela/viagemreveillon25/pizza.jpg", titulo: "A NOSSA PIZZA", data: "JAN 2026" },
     { src: "/imagens/eu-e-ela/viagemreveillon25/rockburguer.JPG", titulo: "ROCK BURGUER", data: "JAN 2026" },
-    { src: "https://res.cloudinary.com/dyxzqghnx/video/upload/v1771948888/Fogosanonovo_omn1iv.mp4", titulo: "FELIZ ANO NOVO", data: "JAN 2026" },
+    { src: "https://xcvpkzhmpeytdubs.public.blob.vercel-storage.com/fogosanonovo.mp4", titulo: "FELIZ ANO NOVO", data: "JAN 2026" },
   ];
 
   return (
