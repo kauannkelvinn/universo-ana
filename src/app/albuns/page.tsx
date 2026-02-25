@@ -20,7 +20,7 @@ export default function AlbunsPage() {
     { src: "/imagens/albuns/donda.jpg", titulo: "DONDA", data: "KANYE" },
     { src: "/imagens/albuns/graduation.jpg", titulo: "GRADUATION", data: "KANYE" },
     { src: "/imagens/albuns/lateregistration.jpg", titulo: "LATE REGISTRATION", data: "KANYE" },
-    { src: "/imagens/albuns/mybeautifuldarktwistedfantasy.jpg", titulo: "MY BEAUTIFUL DARK TWISTED FANTASY", data: "KANYE" },
+    { src: "/imagens/albuns/mybeautiful.jpg", titulo: "MY BEAUTIFUL DARK TWISTED FANTASY", data: "KANYE" },
     { src: "/imagens/albuns/thecollegedroppout.jpg", titulo: "THE COLLEGE DROPPOUT", data: "KANYE" },
     { src: "/imagens/albuns/yeezus.jpg", titulo: "YEEZUS", data: "KANYE" },
     { src: "/imagens/albuns/wolf.jpg", titulo: "WOLF", data: "TYLER, THE CREATOR" },
