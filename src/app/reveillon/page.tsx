@@ -2,7 +2,7 @@ import TemplateGaleria from "@/components/TemplateGaleria";
 
 export default function ReveillonPage() {
   const fotos = [
-    { src: "/imagens/eu-e-ela/viagemreveillon25/estacaoluz.jpg", titulo: "A ROTINA EM SP", data: "JAN 2026" },
+    { src: "https://xcvpkzhmpeytdubs.public.blob.vercel-storage.com/estacaoluz.jpg", titulo: "A ROTINA EM SP", data: "JAN 2026" },
     { src: "/imagens/eu-e-ela/viagemreveillon25/burguernoairbnb.jpg", titulo: "NOITES NO AIRBNB", data: "JAN 2026" },
     { src: "/imagens/eu-e-ela/viagemreveillon25/heloisaeeu.jpg", titulo: "FAMÍLIA", data: "JAN 2026" },
     { src: "/imagens/eu-e-ela/viagemreveillon25/pizza.jpg", titulo: "A NOSSA PIZZA", data: "JAN 2026" },
